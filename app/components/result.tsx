@@ -1,6 +1,6 @@
 type Result = {
-  p1: number[];
-  p2: number[];
+  p1: string[];
+  p2: string[];
 };
 
 export const Result = ({ p1, p2 }: Result) => {

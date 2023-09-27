@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Result } from "./components/result";
 import Players from "./components/players";
 import Marquee from "./components/markee-magic";
+import { Fixture } from "./components/fixture";
 
 const reviews = [
   {
@@ -71,7 +72,7 @@ const ReviewCard = ({
 
 export default function Home() {
   return (
-    <main className="m-8 md:m-auto max-w-5xl">
+    <main className="max-w-5xl m-auto mt-16 pb-20 px-4">
       {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left"></div> */}
       {/* <div>
         <Image
@@ -83,7 +84,7 @@ export default function Home() {
           style={{ width: "100%", height: "auto" }} // optional
         />
       </div> */}
-      <div className="overflow-x-auto">
+      <div>
         <h1 className="text-2xl underline-title">Conoce el fixture</h1>
 
         {/* <ul className="flex gap-8">
@@ -94,91 +95,8 @@ export default function Home() {
           <li>Semi-final</li>
           <li>Final</li>
         </ul> */}
-        <div className="overflow-x-auto">
-          <div className="flex justify-center">
-            <div className="flex gap-6 min-w-full">
-              <ul className="match">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom bracket_match">
-                  <Players p1="R. Federer" p2="D. Nabaldian" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom bracket_match">
-                  <Players p1="R. Nadal" p2="N. Djkovich" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom bracket_match">
-                  <Players p1="R. Federer" p2="D. Nabaldian" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom bracket_match">
-                  <Players p1="R. Nadal" p2="N. Djkovich" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-              </ul>
-              <ul className="match">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom bracket_quarter my-12">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom bracket_quarter my-12">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-              </ul>
-              <ul className="match bracket_semifinal">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 w-[210px]">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-              </ul>
-              <ul className="match final">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 bracket_thirdPlacePlayOff w-[210px]">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-violet-400 bg-white rounded-lg p-2 my-12 bracket_final w-[210px]">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-              </ul>
-              <ul className="match items-end bracket_semifinal">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 w-[210px]">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-              </ul>
-              <ul className="match">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom-r bracket_quarter-r my-12">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom-r bracket_quarter-r my-12">
-                  <Players />
-                  <Result p1={[0, 0, 0]} p2={[0, 0, 0]} />
-                </li>
-              </ul>
-              <ul className="match">
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom-r bracket_match">
-                  <Players p1="R. Federer" p2="D. Nabaldian" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom-r bracket_match">
-                  <Players p1="R. Nadal" p2="N. Djkovich" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom-r bracket_match">
-                  <Players p1="R. Federer" p2="D. Nabaldian" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-                <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 custom-r bracket_match">
-                  <Players p1="R. Nadal" p2="N. Djkovich" />
-                  <Result p1={[1, 2, 3]} p2={[4, 5, 6]} />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* <div>
+        <Fixture />
+        <div>
           <h2 className="text-2xl underline-title">Auspiciantes</h2>
           <div className="my-8 relative flex flex-col w-full overflow-hidden gap-y-4">
             <Marquee reverse pauseOnHover className="[--duration:40s]">
@@ -197,7 +115,7 @@ export default function Home() {
             <div className="absolute inset-y-0 left-0 w-40 pointer-events-none from-white to-transparent bg-gradient-to-r "></div>
             <div className="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-white"></div>
           </div>
-        </div> */}
+        </div>
       </div>
     </main>
   );
