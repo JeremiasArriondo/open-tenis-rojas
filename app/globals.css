@@ -59,6 +59,35 @@ body {
   margin-top: 12px;
   margin-bottom: 40px;
 }
+.custom-r {
+  width: 210px;
+}
+
+.custom-r::before {
+  content: "";
+  color: #f48633;
+  position: absolute;
+  border-top: 2px solid;
+  left: -12px;
+  width: 12px;
+  top: 50%;
+}
+
+.custom-r::after {
+  content: "";
+  position: absolute;
+  border-right: 2px solid;
+  left: -24px;
+  width: 12px;
+  height: 64px;
+  top: 50%;
+}
+
+.custom-r:nth-of-type(2n)::after {
+  height: 64px;
+  top: -30px;
+  bottom: 50%;
+}
 
 .custom {
   width: 210px;
@@ -77,7 +106,6 @@ body {
 
 .custom::after {
   content: "";
-  color: blue;
   position: absolute;
   border-right: 2px solid;
   right: -12px;
@@ -88,8 +116,99 @@ body {
 
 .custom:nth-of-type(2n)::after {
   height: 64px;
-  top: 0;
+  top: -30px;
   bottom: 50%;
+}
+
+.bracket_quarter::before {
+  left: 100%;
+  width: 12px;
+  z-index: 10;
+}
+
+.bracket_quarter::after {
+  left: 100%;
+  height: 118px;
+}
+
+.bracket_quarter:nth-of-type(2n)::after {
+  height: 118px;
+  bottom: 50%;
+  top: -86px;
+}
+
+.bracket_quarter-r::before {
+  right: 100%;
+  width: 12px;
+  z-index: 10;
+}
+
+.bracket_quarter-r::after {
+  right: 100%;
+  height: 118px;
+}
+
+.bracket_quarter-r:nth-of-type(2n)::after {
+  height: 118px;
+  bottom: 50%;
+  top: -86px;
+}
+
+.bracket_r::before {
+  right: 100%;
+  /* left: 0;
+  width: 0px; */
+}
+
+.bracket_semifinal {
+  max-width: 120px;
+}
+
+.bracket_final::before {
+  content: "";
+  border: 2px solid #f48633;
+  border-top: 2px;
+  position: absolute;
+  height: 30px;
+  top: -84%;
+  width: 250px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bracket_final::after {
+  content: "";
+  border-width: 1px;
+  border-color: #f48633;
+  position: absolute;
+  display: block;
+  left: 50%;
+  height: 24px;
+  bottom: 100%;
+}
+
+.bracket_thirdPlacePlayOff::before {
+  content: "";
+  border-width: 1px;
+  border-color: #f48633;
+  position: absolute;
+  display: block;
+  left: 50%;
+  height: 24px;
+  top: 101%;
+}
+
+.bracket_thirdPlacePlayOff::after {
+  content: "";
+  color: #f48633;
+  border: 2px solid;
+  border-bottom: none;
+  position: absolute;
+  height: 30px;
+  top: 138%;
+  width: 250px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .underline-title {
