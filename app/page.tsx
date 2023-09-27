@@ -72,7 +72,7 @@ const ReviewCard = ({
 
 export default function Home() {
   return (
-    <main className="max-w-5xl m-auto mt-16 pb-20 px-4">
+    <main className="max-w-7xl mx-4 mt-8 pb-16 px-4">
       {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left"></div> */}
       {/* <div>
         <Image
@@ -84,7 +84,7 @@ export default function Home() {
           style={{ width: "100%", height: "auto" }} // optional
         />
       </div> */}
-      <div>
+      <div className="overflow-x-auto">
         <h1 className="text-2xl underline-title">Conoce el fixture</h1>
 
         {/* <ul className="flex gap-8">

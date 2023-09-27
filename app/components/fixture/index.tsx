@@ -4,14 +4,14 @@ import { Result } from "../result";
 export const Fixture = () => {
   return (
     <div className="overflow-x-auto">
-      <ul className="flex min-w-full justify-between gap-6">
-        <li className="w-[210px]">Octavos de final</li>
-        <li className="w-[210px]">Cuartos de final</li>
-        <li className="w-[210px]">Semi Final</li>
-        <li className="w-[210px]">Tercer puesto y Final</li>
-        <li className="w-[210px]">Semi Final</li>
-        <li className="w-[210px]">Cuartos de final</li>
-        <li className="w-[210px]">Octavos de final</li>
+      <ul className="flex min-w-[1248px] justify-between gap-4 text-orange-500 text-sm text-center px-8">
+        <li>Octavos de final</li>
+        <li>Cuartos de final</li>
+        <li>Semi Final</li>
+        <li className="w-32">Tercer puesto y Final</li>
+        <li>Semi Final</li>
+        <li>Cuartos de final</li>
+        <li>Octavos de final</li>
       </ul>
 
       <div className="flex gap-6 min-w-full">
@@ -44,18 +44,18 @@ export const Fixture = () => {
           </li>
         </ul>
         <ul className="match bracket_semifinal">
-          <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 w-[210px]">
+          <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 w-[170px]">
             <Players />
             <Result p1={["-", "-", "-"]} p2={["-", "-", "-"]} />
           </li>
         </ul>
         {/* FINAL */}
         <ul className="match final">
-          <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 bracket_thirdPlacePlayOff w-[210px]">
+          <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 bracket_thirdPlacePlayOff w-[170px]">
             <Players />
             <Result p1={["-", "-", "-"]} p2={["-", "-", "-"]} />
           </li>
-          <li className="flex flex-col relative border border-orange-500 bg-white rounded-lg my-12 bracket_final w-[210px]">
+          <li className="flex flex-col relative border border-orange-500 bg-white rounded-lg my-12 bracket_final w-[170px]">
             <span className="font-bold text-center text-orange-500">FINAL</span>
             <div className="w-full px-2 flex justify-between gap-2 relative">
               <Players />
@@ -65,7 +65,7 @@ export const Fixture = () => {
         </ul>
         {/* SEMIFINAL */}
         <ul className="match items-end bracket_semifinal">
-          <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 w-[210px]">
+          <li className="flex justify-between gap-2 relative border border-orange-500 bg-white rounded-lg p-2 my-12 w-[170px]">
             <Players />
             <Result p1={["-", "-", "-"]} p2={["-", "-", "-"]} />
           </li>

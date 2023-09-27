@@ -44,7 +44,7 @@ body {
 }
 
 .match {
-  max-width: 210px;
+  max-width: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -60,7 +60,7 @@ body {
   margin-bottom: 40px;
 }
 .custom-r {
-  width: 210px;
+  width: 170px;
 }
 
 .custom-r::before {
@@ -90,7 +90,7 @@ body {
 }
 
 .custom {
-  width: 210px;
+  width: 170px;
   margin-right: 24px;
 }
 
