@@ -4,7 +4,7 @@ import { Result } from "../result";
 export const Fixture = () => {
   return (
     <div className="overflow-x-auto">
-      <ul className="flex min-w-[1248px] justify-between gap-4 text-orange-500 text-sm text-center px-8">
+      <ul className="flex w-[1248px] justify-between gap-4 text-orange-500 text-sm text-center px-4">
         <li>Octavos de final</li>
         <li>Cuartos de final</li>
         <li>Semi Final</li>

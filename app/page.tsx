@@ -72,7 +72,7 @@ const ReviewCard = ({
 
 export default function Home() {
   return (
-    <main className="max-w-7xl mx-4 mt-8 pb-16 px-4">
+    <main className="mx-8 mt-8 pb-16">
       {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left"></div> */}
       {/* <div>
         <Image
